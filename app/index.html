@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,133 +37,107 @@
   <link rel="canonical" href="http://www.example.com/">
   -->
 </head>
-
 <body>
-
-<header class="header"><img src="https://heliotraining.com/wp-content/uploads/2016/10/heliologoreverseLG_logosm.png" alt="Helio Training">
-</header>
-
-<section name="about-me">
-  <figure> <img src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/17309122_1415979785108226_6072121111095921376_n.jpg?oh=4795d7e3fae7a1a42d91756878dd110d&oe=5A46DC61">
-    </figure>
-  <div class="info">
-    <div class="dateandname">
-    <h2>Olga Allen</h2>
-    <time datetime="2017-09-22">09/22/2017</time>
-      </div>
+<div id="page-wrap">
+<h1 class="login">My Colorful Login</h1>
 
 
-<div>
-  <div class="helio-choose">
-    <h2> I chose Helio because:</h2>
-    <ul>
-      <li> I want to learn most progressive in the industry skills</li>
-      <li> I would like to to get access to career network and find to make easier to find job in new field </li>
-      <li>I want to become skilled full stack developer fast.</li>
-      <li> I enjoy small study group and one to one attention. </li>
-      <li> Our mentors and teachers are great. </li>
-    </ul>
-  </div>
+<section>
 
-  </div>
-  </div>
+
+
+  <section class="name">
+
+  <!--<fieldset>-->
+  <label for="firstName"></label>
+  <input type="text" id="firstName" placeholder="First Name
+" name="firstName" required minlength="2">
+
+
+  <label for="lastName"></label>
+    <input type="text" id="lastName" placeholder="Last Name" name="lastName" required>
+  <!--</fieldset>-->
+
+  </section>
+
+
+
+
+  <section class="second">
+
+    <!--<fieldset>-->
+
+     <label for="age"></label>
+     <input type="number" id="age" placeholder="2">
+
+
+     <label for="date"></label>
+     <input type="date" id="date" name="date" required>
+
+     <label for="color"></label>
+     <input type="color" value="#00000" id="color" name="color" required>
+
+     <label for="password"></label>
+     <input type="password" id="password" name="password" required>
+
+
+    <!--</fieldset>-->
+
+  </section>
+
+
+  <section class="scrolldown">
+    <!--<fieldset>-->
+
+      <label for="email"></label>
+      <input type="email" id="email" placeholder="email" name="email" required minlength="2">
+
+
+      <select name=“it” id=“it”>
+
+        <option disabled="disabled" label ="Where did you hear about Helio?" selected="selected" ></option>
+          <option value=“friend”>I heard about it from a friend</option>
+          <option value=“advertisment”>I saw an advertisment online?</option>
+          <option value=“google”>It came up when I was google searching</option>
+          <option value=“walked”>Walked by the school and saw the sign</option>
+          <option value=“other”>Other...</option>
+      </select>
+
+    <!--</fieldset>-->
+  </section>
+
+
+<section class="checkbox">
+
+  <!--<fieldset>-->
+    <label>
+      <input type="checkbox" name="personality" value="student"> Text only
+    </label>
+    <label>
+      <input type="checkbox" name="personality" value="recruiter"> Text and Email
+    </label>
+    <label>
+      <input type="checkbox" name="personality" value="developer"> None
+    </label>
+
+  <!--</fieldset>-->
+
 </section>
 
+  <section>
+    <div class="button">
+    <button type="submit">Log in</button>
+    </div>
+  </section>
 
 
-<section name="technologies">
+
+
 
 </section>
 
-<article></article>
-
-
-
-<!-- build:js scripts/main.min.js -->
-<script src="scripts/main.js"></script>
-<!-- endbuild -->
-
-
-<form>
-
-  <fieldset>
-    <h2 class="contact"> Contact me </h2>
-    </fieldset>
-
-<fieldset>
-    <label for="firstName">First Name</label>
-    <input type="text" id="firstName" name="firstName" required minlength="2">
-  </fieldset>
-
-  <fieldset>
-    <label for="lastName">Last Name</label>
-    <input type="text" id="lastName" name="lastName" required>
-  </fieldset>
-
-  <fieldset>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-  </fieldset>
-
-<fieldset>
-    <label for="phone">Phone number</label>
-    <input type="phone" id="phone" name="phone" required>
-  </fieldset>
-
-  <fieldset>
-    <label for="age">Age</label>
-    <input type="number" id="age" name="age" required min="0" max="120" value="18">
-  </fieldset>
-
-  <fieldset>
-    <label>
-      <input type="radio" name="gender" value="male"> Male
-    </label>
-    <label>
-      <input type="radio" name="gender" value="female"> Female
-    </label>
-  </fieldset>
-  <fieldset>
-    <label>
-      <input type="checkbox" name="personality" value="student"> Student
-    </label>
-    <label>
-      <input type="checkbox" name="personality" value="recruiter"> Recruiter
-    </label>
-    <label>
-      <input type="checkbox" name="personality" value="developer"> Developer
-    </label>
-  </fieldset>
-
-  <fieldset>
-    <label for="reason">Reason for contact</label>
-    <select name="reason" id="reason">
-      <optgroup label="Primary">
-        <option value="recruiting">recruiting</option>
-        <option value="training">training help</option>
-        <option value="networking">networking</option>
-      </optgroup>
-      <option value="o">Other</option>
-    </select>
-  </fieldset>
-
-  <fieldset>
-    <label for="description">Description</label>
-    <textarea name="description" id="description" cols="30" rows="10"></textarea>
-  </fieldset>
-
-
-  <button type="submit">Save</button>
-
-  <footer>
-    <h6>
-      For Educational Purposes Only by
-      <a href="https://www.heliotraining.com"> Helio Training</a>
-    </h6>
-  </footer>
-
-</form>
+</div>
 
 </body>
-</html>
+
 

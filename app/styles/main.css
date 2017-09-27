@@ -1,56 +1,110 @@
 
-html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  background: #3a393a;
+#page-wrap{
+  width: 800px;
+  height: 350px;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(125deg,rgba(255,26,0,1) 0%,rgba(241,218,54,1) 50%,rgba(41,154,11,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+
+  padding: 30px;
+}
+
+html {
+  background: white;
+}
+
+
+.name {
+  display: flex;
+  justify-content: space-around;
+}
+
+#color {
+  margin-top: 30px !important;
+  padding: 5px;
+}
+
+#firstName,
+#lastName{
+  width:375px;
+  height: 30px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#email{
+  width:200px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#age,
+#date,
+#color,
+#password,
+#email {
+  height: 25px;
+}
+
+#email {
+
+}
+
+.login {
   color: white;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-header,
-section,
-article,
-footer {
-  border: 1px solid red;
-  padding: 16px;
-}
-
-[name="about-me"] {
-  display: flex;
-}
-
-[name="about-me"] div {
-  display: flex;
-  border: 1px solid orange;
-}
-
-[name="about-me"] figure {
-
-}
-[name="about-me"] img{
-  width: 250px;
-}
-
-[name="technololies"] {
-  border: 1px solid pink;
-}
-
-
-footer {
-  background: #545353;
+.button{
   display: flex;
   justify-content: center;
 }
 
+.button button {
+  width: 788px;
+  height: 30px;
+  background: green;
+  border: 2px solid green;
+}
+
+.checkbox{
+  padding: 10px;
+  display: flex;
+  font-weight: bold;
+}
+
+#hearAbout{
+  padding: 7px;
+}
+
+.scrolldown {
+  padding: 20px;
+}
+
+
+
+/*#it{*/
+  /*font-weight: bold;*/
+  /*font-family: sans-serif;*/
+  /*font-size: 40px;*/
+/*}*/
+
+.second{
+  padding: 20px;
+
+}
+
+#password{
+  text-security: disc;
+  icon: auto;
+}
+
+select {
+  width: 450px;
+  height: 35px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 16px;
+}
